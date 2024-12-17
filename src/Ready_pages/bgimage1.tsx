@@ -4,7 +4,7 @@ const BackgroundImage = () => {
   return (
     <main>
       <div
-         style={{ backgroundImage: "url('/pic/background.png')" }}
+         style={{ backgroundImage: "url('/pic/background.png')" }} // style="background-image: url('your-image-url.jpg');"
         className=" bg-hero bg-cover bg-center bg-screen w-full h-full"
       >
         <div className="text-center space-y-5 py-11">
