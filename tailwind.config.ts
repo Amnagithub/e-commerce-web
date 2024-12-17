@@ -7,12 +7,31 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {
+    extend:{
+      
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        'hero': "url('/background.png')"
+        
+      }, 
+    
+      letterSpacing:{
+        '3pct':'3%'
       },
+      fontFamily:{
+        poppins:['Poppins','Inter']
+      },
+     colors:{
+      'posterbg':'#FBEBB5',
+      'chairbg':'#FAF4F4',
+      'text':'#9F9F9F',
+      'bgpink':'#FFF9E5',
+      'bgblue':'#816DFA',
+      'bggold':'#CDBA7B',
+     
+       
+              
+    
+  },
     },
   },
   plugins: [],
