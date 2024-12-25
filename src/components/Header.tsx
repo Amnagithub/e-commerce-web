@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 const Header = () => {
   return (
     <div>
@@ -30,8 +31,19 @@ const Header = () => {
               </svg>
             </button>
 
-            <ul className="lg:flex lg:gap-x-10 max-lg:space-y-3 max-lg:fixed max-lg:bg-white max-lg:w-1/2 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50">
-              <li className=" group max-lg:border-b max-lg:py-3 ">
+            <ul className="lg:flex lg:gap-x-10 max-lg:space-y-3 max-lg:fixed max-lg:bg-white max-lg:w-1/2 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto items-center z-50">
+              <section className=" group max-lg:border-b max-lg:py-3 pt-0 flex  ">
+                <Image
+                  alt="logo"
+                  src="/pic/Logos-05.png"
+                  width="60"
+                  height="60"
+                />
+                <span className=" text-yellow-800 text-[28px] font-light block font-poppins mt-2">
+                  Furnico
+                </span>
+              </section>
+              <li className=" group max-lg:border-b max-lg:py-3 ml-24 ">
                 <Link
                   href="/"
                   className="hover:text-blue-600 text-[15px] font-bold text-gray-600  block"
@@ -49,12 +61,12 @@ const Header = () => {
               </li>
 
               <li className="max-lg:border-b max-lg:py-3">
-                <a
-                  href="javascript:void(0)"
+                <Link
+                  href="/about"
                   className="hover:text-[#007bff] text-gray-600 text-[15px] font-bold block"
                 >
                   About
-                </a>
+                </Link>
               </li>
               <li className="max-lg:border-b max-lg:py-3">
                 <Link
@@ -67,12 +79,12 @@ const Header = () => {
             </ul>
           </div>
 
-          <div className="flex items-center space-x-8 max-lg:ml-auto">
+          <div className="flex items-center space-x-8 max-lg:ml-auto ">
             <span className="relative">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20px"
-                className="cursor-pointer fill-[#333] hover:fill-[#007bff] inline"
+                className="cursor-pointer  fill-[#333] hover:fill-[#007bff] inline"
                 viewBox="0 0 64 64"
               >
                 <path
@@ -81,27 +93,30 @@ const Header = () => {
                 />
               </svg>
               <span className="absolute left-auto -ml-1 top-0 rounded-full bg-blue-600 px-1 py-0 text-xs text-white">
-                0
+                3k
               </span>
             </span>
 
-            <span className="relative">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20px"
-                height="20px"
-                className="cursor-pointer fill-[#333] hover:fill-[#007bff] inline"
-                viewBox="0 0 512 512"
-              >
-                <path
-                  d="M164.96 300.004h.024c.02 0 .04-.004.059-.004H437a15.003 15.003 0 0 0 14.422-10.879l60-210a15.003 15.003 0 0 0-2.445-13.152A15.006 15.006 0 0 0 497 60H130.367l-10.722-48.254A15.003 15.003 0 0 0 105 0H15C6.715 0 0 6.715 0 15s6.715 15 15 15h77.969c1.898 8.55 51.312 230.918 54.156 243.71C131.184 280.64 120 296.536 120 315c0 24.812 20.188 45 45 45h272c8.285 0 15-6.715 15-15s-6.715-15-15-15H165c-8.27 0-15-6.73-15-15 0-8.258 6.707-14.977 14.96-14.996zM477.114 90l-51.43 180H177.032l-40-180zM150 405c0 24.813 20.188 45 45 45s45-20.188 45-45-20.188-45-45-45-45 20.188-45 45zm45-15c8.27 0 15 6.73 15 15s-6.73 15-15 15-15-6.73-15-15 6.73-15 15-15zm167 15c0 24.813 20.188 45 45 45s45-20.188 45-45-20.188-45-45-45-45 20.188-45 45zm45-15c8.27 0 15 6.73 15 15s-6.73 15-15 15-15-6.73-15-15 6.73-15 15-15zm0 0"
-                  data-original="#000000"
-                ></path>
-              </svg>
-              <span className="absolute left-auto -ml-1 top-0 rounded-full bg-blue-600 px-1 py-0 text-xs text-white">
-                0
+            <a title="cart1" href="/Cart">
+              <span className="relative">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20px"
+                  height="20px"
+                  className="cursor-pointer fill-[#333] hover:fill-[#007bff] inline"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M164.96 300.004h.024c.02 0 .04-.004.059-.004H437a15.003 15.003 0 0 0 14.422-10.879l60-210a15.003 15.003 0 0 0-2.445-13.152A15.006 15.006 0 0 0 497 60H130.367l-10.722-48.254A15.003 15.003 0 0 0 105 0H15C6.715 0 0 6.715 0 15s6.715 15 15 15h77.969c1.898 8.55 51.312 230.918 54.156 243.71C131.184 280.64 120 296.536 120 315c0 24.812 20.188 45 45 45h272c8.285 0 15-6.715 15-15s-6.715-15-15-15H165c-8.27 0-15-6.73-15-15 0-8.258 6.707-14.977 14.96-14.996zM477.114 90l-51.43 180H177.032l-40-180zM150 405c0 24.813 20.188 45 45 45s45-20.188 45-45-20.188-45-45-45-45 20.188-45 45zm45-15c8.27 0 15 6.73 15 15s-6.73 15-15 15-15-6.73-15-15 6.73-15 15-15zm167 15c0 24.813 20.188 45 45 45s45-20.188 45-45-20.188-45-45-45-45 20.188-45 45zm45-15c8.27 0 15 6.73 15 15s-6.73 15-15 15-15-6.73-15-15 6.73-15 15-15zm0 0"
+                    data-original="#000000"
+                  ></path>
+                </svg>
+                <span className="absolute left-auto -ml-1 top-0 rounded-full bg-blue-600 px-1 py-0 text-xs text-white">
+                  3
+                </span>
               </span>
-            </span>
+            </a>
+
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 192.904 192.904"
@@ -143,14 +158,6 @@ const Header = () => {
                 </svg>
                 <Link href="/my_account">Login</Link>
               </button>
-
-              {/* <button title="login" id="toggleOpen" className='lg:hidden !ml-7'>
-            <svg className="w-7 h-7" fill="#000" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd"
-                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                clip-rule="evenodd"></path>
-            </svg>
-          </button> */}
             </div>
           </div>
         </div>

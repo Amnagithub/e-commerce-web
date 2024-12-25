@@ -1,5 +1,5 @@
 import React from "react";
-
+import Link from "next/link";
 const Footer = () => {
   return (
     <main>
@@ -31,10 +31,8 @@ const Footer = () => {
 
         <div className="grid max-sm:grid-cols-1 max-lg:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
-           
             <p className="text-gray-500 mb-2 text-sm mt-8">
-            400 University Drive Suite 200 Coral Gables,
-            FL 33134 USA
+              400 University Drive Suite 200 Coral Gables, FL 33134 USA
             </p>
           </div>
 
@@ -42,49 +40,49 @@ const Footer = () => {
             <h4 className="text-lg font-bold mb-6 text-gray-800">Link</h4>
             <ul className="space-y-4">
               <li>
-                <a
-                  href="javascript:void(0)"
+                <Link
+                  href="/"
                   className="text-gray-500 hover:text-gray-800 text-[15px]"
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="javascript:void(0)"
+                <Link
+                  href="/shop"
                   className="text-gray-500 hover:text-gray-800 text-[15px]"
                 >
                   Shop
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="javascript:void(0)"
+                <Link
+                  href="/contact"
                   className="text-gray-500 hover:text-gray-800 text-[15px]"
                 >
-                 Contact Us
-                </a>
+                  Contact
+                </Link>
               </li>
               <li>
-                <a
-                  href="javascript:void(0)"
+                <Link
+                  href="/about"
                   className="text-gray-500 hover:text-gray-800 text-[15px]"
                 >
-                  Digital Marketing
-                </a>
+                  About
+                </Link>
               </li>
             </ul>
           </div>
 
           <div>
-            <h4 className="text-lg font-bold mb-6 text-gray-800">Resources</h4>
+            <h4 className="text-lg font-bold mb-6 text-gray-800">Help</h4>
             <ul className="space-y-4">
               <li>
                 <a
                   href="javascript:void(0)"
                   className="text-gray-500 hover:text-gray-800 text-[15px]"
                 >
-                  Webinars
+                  Payment Options
                 </a>
               </li>
               <li>
@@ -92,7 +90,7 @@ const Footer = () => {
                   href="javascript:void(0)"
                   className="text-gray-500 hover:text-gray-800 text-[15px]"
                 >
-                  Ebooks
+                  Returns
                 </a>
               </li>
               <li>
@@ -100,7 +98,7 @@ const Footer = () => {
                   href="javascript:void(0)"
                   className="text-gray-500 hover:text-gray-800 text-[15px]"
                 >
-                  Templates
+                  Privacy Policies
                 </a>
               </li>
               <li>

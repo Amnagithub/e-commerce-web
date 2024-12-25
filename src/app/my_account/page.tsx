@@ -7,15 +7,22 @@ const page = () => {
     <main>
       <section>
         <div
-                          style={{ backgroundImage: "url('/pic/Rectangle 1.png')" }}
-                          className="bg-cover bg-center  bg-blend-screen"
-                        >
-                          <div className="flex flex-col justify-center items-center py-16">
-                              <Image width={80} height={200} alt="logo" src='/pic/Logos-05.png' className=" flex justify-center"></Image>
-                              <h1 className="text-4xl text-poppins font-semibold text-gray-950">My Account</h1>
-                            
-                          </div>
-                        </div>
+          style={{ backgroundImage: "url('/pic/Rectangle 1.png')" }}
+          className="bg-cover bg-center  bg-blend-screen"
+        >
+          <div className="flex flex-col justify-center items-center py-16">
+            <Image
+              width={80}
+              height={200}
+              alt="logo"
+              src="/pic/Logos-05.png"
+              className=" flex justify-center"
+            ></Image>
+            <h1 className="text-4xl text-poppins font-semibold text-gray-950">
+              My Account
+            </h1>
+          </div>
+        </div>
       </section>
       <div className="font-poppins bg-cover flex items-center md:max-h-fit p-4">
         <div className="w-full max-w-4xl mx-auto">

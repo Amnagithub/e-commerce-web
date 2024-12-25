@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { Poppins, Inter } from "next/font/google";
-import BackgroundImage from "@/Ready_pages/bgimage1";
+import BackgroundImage from "@/Ready_pages/instaGram";
 import Link from "next/link";
 const Home = () => {
   return (
@@ -11,7 +11,10 @@ const Home = () => {
           <h1 className="font-tnin text-start font-poppins mt-20 md:text-6xl  lg:text-7xl xlg:text-7xl">
             Rocket single seater
             <div>
-              <Link  href="/shop" className="font-poppins sm:text-md text-xl text-center underline underline-offset-8 decoration-slate-800">
+              <Link
+                href="/shop"
+                className="font-poppins sm:text-md text-xl text-center underline underline-offset-8 decoration-slate-800"
+              >
                 Shop Now
               </Link>
             </div>
@@ -50,7 +53,7 @@ const Home = () => {
 
       <section className="text-center bg-white mt-10 mb-7">
         <h1 className="font-bold text-3xl font-poppins">Top Picks For You</h1>
-        <p className="font-bold text-2xl mt-4 font-poppins text-text lg:px-40 p-4 ">
+        <p className="text-2xl mt-4 font-poppins text-text lg:px-40 p-4 ">
           Find a bright ideal to suit your taste with our great selection of
           suspension, floor, and table lights.
         </p>
@@ -120,33 +123,38 @@ const Home = () => {
             </span>
           </div>
         </div>
-        <Link href="/shop" className="font-poppins text-2xl mt-7 text-center underline underline-offset-8 py-8  decoration-slate-800">
+        <Link
+          href="/shop"
+          className="font-poppins text-2xl mt-7 text-center underline underline-offset-8 py-8  decoration-slate-800"
+        >
           View More
         </Link>
       </section>
 
-      <section className="flex flex-col items-center min-h-fit lg:flex-row bg-bgpink p-10">
+      <section className="flex flex-col items-center max-h-fit lg:flex-row bg-bgpink p-15">
         <Image
-          width={800}
-          height={800}
+          width={500}
+          height={500}
           alt="Asgaard Sofa"
           src="/pic/Asgaard sofa 1.png"
           className="w-full lg:w-1/2"
         />
-        <div className=" ml-6 flex flex-col space-y-4 justify-center items-start  lg:w-1/2">
-          <p className="text-2xl font-poppins font-bold ">New Arrivals</p>
-          <h1 className="font-bold text-5xl font-poppins ">Asgaard sofa</h1>
+        <div className="  flex flex-col justify-center items-center py-5  lg:w-1/2">
+          <p className="text-xl font-poppins font-bold ">New Arrivals</p>
+          <h1 className="font-bold text-5xl sm:text-4xl font-poppins ">
+            Asgaard sofa
+          </h1>
           <Link
             href="/single_products"
-            className="text-lg items-start px-10 py-2 mt-16 rounded-s border-2 border-black "
+            className="text-lg items-center px-8 py-2 sm:tracking-wide mt-5 display-none border-2  border-black "
           >
             Order Now
           </Link>
         </div>
       </section>
-      <div className="text-center mt-8">
+      <div className="text-center my-8">
         <h1 className="font-bold text-3xl font-poppins">Our Blogs</h1>
-        <p className="font-bold text-2xl mt-6 font-poppins text-text">
+        <p className=" text-xl mt-6 font-poppins text-text">
           Find a bright ideal to suit your taste with our great selection
         </p>
         <section className="flex justify-center px-8 py-6 gap-6 bg-[#ffff]">
@@ -164,7 +172,8 @@ const Home = () => {
               <p className="mt-3 text-sm text-gray-500 leading-relaxed">
                 Going all-in with millennial design
               </p>
-              <Link href="/blogs"
+              <Link
+                href="/blogs"
                 type="button"
                 className="mt-2 px-5 py-2.5 rounded-sm text-sm tracking-wider font-semibold border-none outline-none underline-offset-8 underline"
               >
@@ -187,7 +196,8 @@ const Home = () => {
               <p className="mt-3 text-sm text-gray-500 leading-relaxed">
                 Going all-in with millennial design
               </p>
-              <Link href="/blogs"
+              <Link
+                href="/blogs"
                 type="button"
                 className="mt-2 px-5 py-2.5 rounded-sm text-sm tracking-wider font-semibold border-none outline-none underline-offset-8 underline"
               >
@@ -209,7 +219,8 @@ const Home = () => {
               <p className="mt-3 text-sm text-gray-500 leading-relaxed">
                 Going all-in with millennial design
               </p>
-              <Link href="/blogs"
+              <Link
+                href="/blogs"
                 type="button"
                 className="mt-2 px-5 py-2.5 rounded-sm text-sm tracking-wider font-semibold border-none outline-none underline-offset-8 underline"
               >
@@ -221,7 +232,7 @@ const Home = () => {
         <div className="font-poppins pb-5 space-x-4 space-y-4 text-center">
           <button
             type="button"
-            className="bg-white py-2.5 min-w-[140px]text-xl  underline underline-offset-8 font-bold tracking-wider outline-none "
+            className="bg-white py-2.5 min-w-[140px] text-xl lg:text-2xl  underline underline-offset-8 font-bold tracking-wider  "
           >
             <Link href="/blogs">View All Post</Link>
           </button>
