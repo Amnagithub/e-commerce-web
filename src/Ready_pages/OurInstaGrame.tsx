@@ -1,6 +1,6 @@
 import React from "react";
 
-const BackgroundImage = () => {
+const OurInstaGrame = () => {
   const backgroundImageStyle = {
     backgroundImage: "url(/pic/background.png)",
     backgroundSize: "cover",
@@ -17,7 +17,7 @@ const BackgroundImage = () => {
         >
           <section>
             <div className="">
-              <h1 className="font-bold text-5xl font-poppins">Our Instagram</h1>
+              <h1 className="font-bold text-gray-800 text-5xl font-poppins">Our Instagram</h1>
               <p className=" text-1xl  font-poppins text-text mt-3">
                 Follow our store on Instagram
               </p>
@@ -38,4 +38,4 @@ const BackgroundImage = () => {
   );
 };
 
-export default BackgroundImage;
+export default OurInstaGrame;

@@ -1,6 +1,8 @@
 import React from "react";
 import CompanyPolicy from "@/Ready_pages/companyPolicy";
 import Image from "next/image";
+import { MdArrowForwardIos } from "react-icons/md";
+import Link from "next/link";
 const CheckOut = () => {
   return (
     <main>
@@ -20,6 +22,15 @@ const CheckOut = () => {
             <h1 className="text-4xl text-poppins font-semibold text-gray-950">
               Checkout
             </h1>
+            <div className="flex items-center space-x-2 mt-4">
+            <span>
+              <Link className="text-lg font-bold"href="/">Home</Link>
+            </span>
+            <MdArrowForwardIos />
+            <span>
+              <Link className="text-lg font-semibold"href="/CheckOut">CheckOut</Link>
+            </span>
+          </div>
           </div>
         </div>
       </section>

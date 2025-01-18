@@ -1,6 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import CompanyPolicy from "@/Ready_pages/companyPolicy";
+import Link from "next/link";
+import { MdArrowForwardIos } from "react-icons/md";
+
 function page() {
   return (
     <main>
@@ -20,6 +23,15 @@ function page() {
             <h1 className="text-4xl text-poppins font-semibold text-gray-950">
               About us
             </h1>
+            <div className="flex items-center space-x-2 mt-4">
+            <span>
+              <Link className="text-lg font-bold"href="/">Home</Link>
+            </span>
+            <MdArrowForwardIos />
+            <span>
+              <Link className="text-lg font-semibold"href="/about">About us</Link>
+            </span>
+          </div>
           </div>
         </div>
       </section>
