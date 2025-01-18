@@ -75,8 +75,7 @@ export default function ProductPage() {
     <main>
       <section>
         <div
-          style={{ backgroundImage: "url('/pic/Rectangle 1.png')" }}
-          className="bg-cover bg-center  bg-blend-screen w-full max-w-screen-xxl mx-auto sm:flex-wrap  min-sm:min-w-xxs"
+          className="bg-cover bg-center bg-blend-screen w-full max-w-screen-xxl mx-auto sm:flex-wrap min-sm:min-w-xxs bg-rectangle"
         >
           <div className="flex flex-col justify-center items-center py-16">
             <Image
@@ -408,14 +407,13 @@ export default function ProductPage() {
               <li className="flex flex-wrap gap-4 text-sm">
                 Tax{" "}
                 <span className="ml-auto font-bold">
-                  {(subTotal * taxRate).toFixed(2)}
-                </span>
+                  {(subTotal * taxRate).toFixed(2)}</span>
               </li>
-              <hr className="border-gray-300" />
               <li className="flex flex-wrap gap-4 text-sm font-bold">
                 Total <span className="ml-auto">{total.toFixed(2)}</span>
               </li>
             </ul>
+            <hr className="border-gray-300" />
 
             <div className="mt-8 space-y-2">
               <button

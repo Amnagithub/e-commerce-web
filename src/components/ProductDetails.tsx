@@ -130,7 +130,7 @@ const ProductDetails = ({ product }: any) => {
               </h3>
               <div className="flex flex-wrap gap-3 mt-4">
                 <button
-                  title="a"
+                  title="color"
                   type="button"
                   className="w-10 h-10 bg-black border-2 border-white hover:border-gray-800 rounded-full shrink-0 transition-all"
                 ></button>
@@ -160,7 +160,7 @@ const ProductDetails = ({ product }: any) => {
                 <AiOutlinePlus />
               </button>
             </div>
-            <div className="">
+            <div>
              
               <button
             className="buy-button snipcart-add-item w-[100%]item-center px-4 py-2 mt-6 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-all"

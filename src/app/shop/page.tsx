@@ -77,8 +77,7 @@ price,
   return (
     <main>
       <div
-        style={{ backgroundImage: "url('/pic/Rectangle 1.png')" }}
-        className="bg-cover bg-center bg-blend-screen w-full max-w-screen-xxl mx-auto sm:flex-wrap min-sm:min-w-xxs"
+        className="shop-header bg-cover bg-center bg-blend-screen w-full max-w-screen-xxl mx-auto sm:flex-wrap min-sm:min-w-xxs"
       >
         <div className="flex flex-col justify-center items-center py-16">
           <Image

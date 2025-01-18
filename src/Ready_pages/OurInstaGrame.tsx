@@ -1,19 +1,12 @@
 import React from "react";
+import "./OurInstaGrame.css";
 
 const OurInstaGrame = () => {
-  const backgroundImageStyle = {
-    backgroundImage: "url(/pic/background.png)",
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    width: "screen",
-    height: "450px",
-  };
   return (
     <main>
       <section className=" ">
         <div
-          className="flex justify-center items-center text-center mx-auto"
-          style={backgroundImageStyle}
+          className="flex justify-center items-center text-center mx-auto backgroundImageStyle"
         >
           <section>
             <div className="">

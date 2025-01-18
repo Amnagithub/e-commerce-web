@@ -24,13 +24,13 @@ const Header = () => {
               </svg>
             </button>
             <div className={`flex items-center ${isMenuOpen ? 'block' : 'hidden'} lg:block`}>
+              <section className="group max-lg:border-b max-lg:py-3 pt-0 flex">
+                <Image alt="logo" src="/pic/Logos-05.png" width="60" height="60" />
+                <span className="text-yellow-800 text-[28px] font-light block font-poppins mt-2">
+                  Furnico
+                </span>
+              </section>
               <ul className="lg:flex lg:gap-x-10 max-lg:space-y-3 max-lg:fixed max-lg:bg-white max-lg:w-1/2 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto items-center z-50">
-                <section className="group max-lg:border-b max-lg:py-3 pt-0 flex">
-                  <Image alt="logo" src="/pic/Logos-05.png" width="60" height="60" />
-                  <span className="text-yellow-800 text-[28px] font-light block font-poppins mt-2">
-                    Furnico
-                  </span>
-                </section>
                 <li className="group max-lg:border-b max-lg:py-3 ml-24">
                   <Link href="/" className="hover:text-blue-600 text-[15px] font-bold text-gray-600 block">
                     Home
