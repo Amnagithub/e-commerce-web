@@ -21,6 +21,7 @@ async function Home () {
      <Newarrivals />
      <OurBlogs />
      <OurInstaGrame />
+  
     </main>
   );
 };
