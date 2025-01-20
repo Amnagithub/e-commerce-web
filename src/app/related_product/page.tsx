@@ -80,12 +80,13 @@ const Products = () => {
               <h1 className="sm:text-md md:text-3xl lg:text-3xl pt-4 font-bold text-slate-800">
                 Best Selling Products
               </h1>
-              <a
-                href="#products"
+              <button
+              type="button"
+               
                 className="md:px-7 sm:px-8 sm:text-sm md:text-sm py-2 hover:bg-gray-600 text-white text-center bg-gray-900 rounded-lg h-11  mt-0 max-w-32 "
               >
                 <Link href="/shop">View All</Link>
-              </a>
+              </button>
             </div>
           </div>
           <div className="flex flex-wrap justify-evenly mt-5 gap-y-5">

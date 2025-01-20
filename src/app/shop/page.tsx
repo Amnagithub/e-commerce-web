@@ -31,9 +31,7 @@ price,
   _id,
   reviews,
   rate,
-  
-    
-  
+
 }`);
         setProducts(products);
       } catch (error) {
@@ -76,38 +74,34 @@ price,
 
   return (
     <main>
-      <div
-        className="shop-header bg-cover bg-center bg-blend-screen w-full max-w-screen-xxl mx-auto sm:flex-wrap min-sm:min-w-xxs"
-      >
-        <div className="flex flex-col justify-center items-center py-16">
-          <Image
-            width={80}
-            height={200}
-            alt="logo"
-            src="/pic/Logos-05.png"
-            className="flex justify-center"
-          />
-          <h1 className="text-4xl text-poppins font-semibold text-gray-950">
+       <section>
+        <div
+          style={{ backgroundImage: "url('/pic/Rectangle 1.png')" }}
+          className="bg-cover bg-center  bg-blend-screen w-full max-w-screen-xxl mx-auto sm:flex-wrap  min-sm:min-w-xxs"
+        >
+          <div className="flex flex-col justify-center items-center py-16">
+            <Image
+              width={80}
+              height={200}
+              alt="logo"
+              src="/pic/Logos-05.png"
+              className="max-w-auto"
+            ></Image>
+            <h1 className="text-4xl text-poppins font-semibold text-gray-950">
             Shop
-          </h1>
-          <div className="flex items-center space-x-2 mt-4">
+            </h1>
+            <div className="flex items-center space-x-2 mt-4">
             <span>
-              <Link className="text-lg font-bold" href="/">
-                Home
-              </Link>
+              <Link className="text-lg font-bold"href="/">Home</Link>
             </span>
             <MdArrowForwardIos />
             <span>
-              <Link
-                className="text-lg font-semibold text-gray-800"
-                href="/shop"
-              >
-                Shop
-              </Link>
+              <Link className="text-lg font-semibold"href="/blogs">Shop</Link>
             </span>
           </div>
+          </div>
         </div>
-      </div>
+      </section>
       <div className="font-sans py-4 mx-auto lg:max-w-6xl md:max-w-4xl max-sm:max-w-md">
         <div className="flex justify-between items-start border-2 font-poppins bg-neutral-200 max-h-fit p-6 mt-6 mb-6 rounded-lg">
           <div className="flex justify-between items-center">

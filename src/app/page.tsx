@@ -1,8 +1,4 @@
-import React from "react";
-import Image from "next/image";
-import { Poppins, Inter } from "next/font/google";
 
-import Link from "next/link";
 import Hero from "@/components/Hero";
 import Middle from "@/components/Middle";
 import TopPicks from "@/components/TopPicks";

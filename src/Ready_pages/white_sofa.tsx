@@ -25,7 +25,7 @@ const White_sofa = () => {
             enables easy and stylish travel.
           </p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-12  mx-auto min-w-full">
+        <div className="flex flex-wrap items-center justify-center gap-12 mx-auto lg:max-w-auto">
           <Image
             alt="img1"
             src="/pic/white-sofa1.png"
