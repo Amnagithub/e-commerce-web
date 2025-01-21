@@ -1,6 +1,7 @@
 import React from "react";
 
 const OurInstaGrame = () => {
+  // Example usage in a component or page
   return (
     <main>
       <section
