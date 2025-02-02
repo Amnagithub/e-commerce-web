@@ -1,10 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-
- 
-
-
 const Card = ({product}:any) => {
   const renderStars = (rate:number) => {
     const stars = [];

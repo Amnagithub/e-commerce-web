@@ -7,6 +7,7 @@ import { CiHeart } from "react-icons/ci";
 import { GiShoppingCart } from "react-icons/gi";
 import { CiSearch } from "react-icons/ci";
 import { IoMenu } from "react-icons/io5";
+import { SignedOut, SignInButton, SignedIn, UserButton } from "@clerk/nextjs";
 
 const Header = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -17,9 +18,7 @@ const Header = () => {
   return (
     <div>
       <header className="flex items-center justify-between border-b bg-white font-sans min-h-[70px] tracking-wide relative z-50 px-7 py-3">
-        <div
-          className={`${isMenuOpen ? "block" : "hidden"} lg:block`}
-        >
+        <div className={`${isMenuOpen ? "block" : "hidden"} lg:block`}>
           <ul className="lg:flex lg:gap-x-14 max-lg:space-y-3 max-lg:fixed max-lg:bg-white max-lg:w-1/2 max-lg:min-w-[300px] max-lg:top-0  max-lg:p-6 max-lg:h-auto max-lg:shadow-md max-lg:overflow-auto items-center z-50">
             <section className="group max-lg:border-b max-lg:py-3 pt-0 flex">
               <Image
@@ -32,40 +31,39 @@ const Header = () => {
                 Furnico
               </span>
             </section>
-            
-              <li className="group max-lg:border-b max-lg:py-3">
-                <Link
-                  href="/"
-                  className="hover:text-blue-600 text-[15px] font-bold text-gray-600 block"
-                >
-                  Home
-                </Link>
-              </li>
-              <li className="group max-lg:border-b max-lg:py-3">
-                <Link
-                  href="/shop"
-                  className="hover:text-blue-600 text-[15px] font-bold text-gray-600 block"
-                >
-                  Shop
-                </Link>
-              </li>
-              <li className="max-lg:border-b max-lg:py-3">
-                <Link
-                  href="/about"
-                  className="hover:text-[#007bff] text-gray-600 text-[15px] font-bold block"
-                >
-                  About
-                </Link>
-              </li>
-              <li className="max-lg:border-b max-lg:py-3">
-                <Link
-                  href="/contact"
-                  className="hover:text-[#007bff] text-gray-600 text-[15px] font-bold block"
-                >
-                  Contact
-                </Link>
-              </li>
-            
+
+            <li className="group max-lg:border-b max-lg:py-3">
+              <Link
+                href="/"
+                className="hover:text-blue-600 text-[15px] font-bold text-gray-600 block"
+              >
+                Home
+              </Link>
+            </li>
+            <li className="group max-lg:border-b max-lg:py-3">
+              <Link
+                href="/shop"
+                className="hover:text-blue-600 text-[15px] font-bold text-gray-600 block"
+              >
+                Shop
+              </Link>
+            </li>
+            <li className="max-lg:border-b max-lg:py-3">
+              <Link
+                href="/about"
+                className="hover:text-[#007bff] text-gray-600 text-[15px] font-bold block"
+              >
+                About
+              </Link>
+            </li>
+            <li className="max-lg:border-b max-lg:py-3">
+              <Link
+                href="/contact"
+                className="hover:text-[#007bff] text-gray-600 text-[15px] font-bold block"
+              >
+                Contact
+              </Link>
+            </li>
           </ul>
         </div>
 
@@ -88,14 +86,26 @@ const Header = () => {
             <span className="relative cursor-pointer fill-[#333] hover:fill-[#007bff]">
               <GiShoppingCart size={25} />
               <span className="absolute left-auto ml-2 top-0 rounded-full bg-blue-600 px-1 py-0 text-xs text-white">
-                <span className="snipcart-items-count snipcart-checkout"></span>
+                <Link
+                  href="/Cart"
+                  className="snipcart-items-count snipcart-checkout"
+                ></Link>
               </span>
             </span>
           </button>
-          <span className="relative cursor-pointer fill-[#333] hover:fill-[#007bff]">
-            <CiSearch size={25} />
+          <span>
+            <SignedIn>
+              <UserButton />
+            </SignedIn>
+            <SignedOut>
+              <SignInButton />
+            </SignedOut>
           </span>
 
+          {/* <span className="relative cursor-pointer fill-[#333] hover:fill-[#007bff]">
+            <CiSearch size={25}/>
+           </span>
+         */}
           <button
             title="tog"
             type="button"

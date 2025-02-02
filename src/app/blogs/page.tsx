@@ -34,7 +34,7 @@ const Blogs = () => {
           </div>
         </div>
       </section>
-      <div className="flex flex-col-2  sm:flex-wrap justify-evenly place-items-start min-sm:min-w-xxs ">
+      <div className="flex flex-col-2 mx-auto flex-wrap justify-center gap-14 place-items-start min-sm:min-w-xxs ">
         <section>
           <div className="bg-white shadow-[0_4px_12px_-5px_rgba(0,0,0,0.4)]textll place-items-start max-w-sm rounded-lg overflow-hidden mx-auto font-[sans-serif] mt-4">
             <div className="min-h-[256px]">
@@ -171,7 +171,7 @@ const Blogs = () => {
           <div />
         </section>
         <section>
-          <nav className="bg-[#f7f7f8] max-h-fit mt-3 top-1\2 right-0 min-w-[260px] sm:flex-wrap py-6 px-4 font-[sans-serif] flex flex-col overflow-auto">
+          <nav className="bg-[#f7f7f8] max-h-fit mt-5 top-1\2 right-0 min-w-[260px] flex-wrap  py-6 px-4 font-[sans-serif] flex flex-col overflow-auto">
             <div className="flex items-start gap-x-6 gap-y-4 ml-auto">
               <div className="flex bg-gray-50 border focus-within:bg-transparent focus-within:border-gray-400 rounded-md px-4 py-2.5 overflow-hidden max-w-52 max-lg:hidden">
                 <input

@@ -1,19 +1,14 @@
-import React from "react";
+import React, { CSSProperties } from "react";
 
 const OurInstaGrame = () => {
   // Example usage in a component or page
   return (
     <main>
       <section
-        className="h-screen bg-cover bg-center"
-        style={{
-          backgroundImage: "url('/pic/background.png')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          height: "100vh",
-        }}
-      >
-        <div className="flex justify-center items-center h-full text-center mx-auto">
+      className="bg-dynamic"
+      style={{ "--bg-url": `url('/pic/background.png')` } as CSSProperties}
+    > 
+       <div className="flex justify-center items-center h-full text-center mx-auto">
           <section>
             <div>
               <h1 className="font-bold text-gray-800 text-5xl font-poppins">Our Instagram</h1>

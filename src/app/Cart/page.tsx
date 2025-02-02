@@ -74,17 +74,18 @@ export default function ProductPage() {
   return (
     <main>
       <section>
-        <div
-          className="bg-cover bg-center bg-blend-screen w-full max-w-screen-xxl mx-auto sm:flex-wrap min-sm:min-w-xxs bg-rectangle"
-        >
-          <div className="flex flex-col justify-center items-center py-16">
-            <Image
-              width={80}
-              height={200}
-              alt="logo"
-              src="/pic/Logos-05.png"
-              className=" flex justify-center"
-            ></Image>
+         <div
+                  style={{ backgroundImage: "url('/pic/Rectangle 1.png')" }}
+                  className="bg-cover bg-center  bg-blend-screen w-full max-w-screen-xxl mx-auto sm:flex-wrap  min-sm:min-w-xxs"
+                >
+                  <div className="flex flex-col justify-center items-center py-16">
+                    <Image
+                      width={80}
+                      height={200}
+                      alt="logo"
+                      src="/pic/Logos-05.png"
+                      className=" flex justify-center"
+                    ></Image>
             <h1 className="text-4xl text-poppins font-semibold text-gray-950">
               Cart
             </h1>

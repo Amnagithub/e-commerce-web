@@ -10,6 +10,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "@clerk/nextjs": "^6.10.6",
     "@sanity/cli": "^3.68.3",
     "@sanity/client": "^6.25.0",
     "@sanity/image-url": "^1.1.0",
@@ -17,8 +18,9 @@
     "@sanity/vision": "^3.68.3",
     "@xstate/react": "^5.0.2",
     "axios": "^1.7.9",
+    "chrome-launcher": "^1.1.2",
     "figma_ecommerce": "file:",
-    "next": "^14.2.16",
+    "next": "^14.2.23",
     "next-sanity": "^9.8.38",
     "punycode": "^2.3.1",
     "react": "^18.3.1",

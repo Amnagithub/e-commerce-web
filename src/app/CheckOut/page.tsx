@@ -260,16 +260,10 @@ const CheckOut = () => {
                   <div className="space-y-8 mt-8">
                     <div className="flex flex-col gap-4">
                       <div className="max-w-[140px] p-4 shrink-0 bg-gray-200 rounded-lg">
-                        <Image
-                          width={100}
-                          height={100}
-                          alt="Asgaard sofa"
-                          src="/pic/Asgaard sofa 1.png"
-                          className="w-full object-contain"
-                        />
+                       <span className="snipcart-checkout"></span>
                       </div>
 
-                      <div className="w-full">
+                      {/* <div className="w-full">
                         <h3 className="text-base text-gray-800 font-bold">
                           Asgaard sofa
                         </h3>
@@ -290,16 +284,16 @@ const CheckOut = () => {
                             Text <span className="ml-auto">$2</span>
                           </li>
                         </ul>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 </div>
 
-                <div className="lg:absolute lg:left-0 lg:bottom-0 bg-gray-200 w-full p-4">
+                {/* <div className="lg:absolute lg:left-0 lg:bottom-0 bg-gray-200 w-full p-4">
                   <h4 className="flex flex-wrap gap-4 text-base text-gray-800 font-bold">
                     Total <span className="ml-auto">$87.00</span>
                   </h4>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
