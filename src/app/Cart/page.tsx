@@ -5,7 +5,7 @@ import CompanyPolicy from "@/Ready_pages/companyPolicy";
 import Image from "next/image";
 import Link from "next/link";
 import { MdArrowForwardIos } from "react-icons/md";
-
+import Home from "@/app/stripe";
 type CartItem = {
   title: string;
   price: string;
@@ -423,6 +423,9 @@ export default function ProductPage() {
               >
                 <Link href="/CheckOut">Buy Now</Link>
               </button>
+              <span>
+            <Home/>
+          </span>
               <button
                 type="button"
                 className="text-sm px-4 py-2.5 w-full font-semibold tracking-wide bg-transparent hover:bg-gray-100 text-gray-800 border border-gray-300 rounded-md"

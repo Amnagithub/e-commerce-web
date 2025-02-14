@@ -76,12 +76,12 @@ const Header = () => {
               <CiUser size={25} />
             </Link>
           </span>
-          <span className="relative cursor-pointer fill-[#333] hover:fill-[#007bff]">
+          <Link href="/blogs" className="relative cursor-pointer fill-[#333] hover:fill-[#007bff]">
             <CiHeart size={25} />
             <span className="absolute left-auto ml-5 top-0 rounded-full bg-blue-600 px-1 py-0 text-xs text-white">
               3k
             </span>
-          </span>
+          </Link>
           <button title="tog" type="button" className=" relative">
             <span className="relative cursor-pointer fill-[#333] hover:fill-[#007bff]">
               <GiShoppingCart size={25} />
@@ -94,13 +94,14 @@ const Header = () => {
             </span>
           </button>
           <span>
-            <SignedIn>
-              <UserButton />
+           <SignedIn>
+             <UserButton /> 
             </SignedIn>
             <SignedOut>
               <SignInButton />
             </SignedOut>
-          </span>
+             </span>
+         
 
           {/* <span className="relative cursor-pointer fill-[#333] hover:fill-[#007bff]">
             <CiSearch size={25}/>

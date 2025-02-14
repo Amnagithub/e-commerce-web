@@ -1,4 +1,4 @@
-import { NextResponse } from "next/server";
+import { NextResponse, NextRequest } from "next/server";
 import { clerkMiddleware } from "@clerk/nextjs/server";
 import { createRouteMatcher } from "@clerk/nextjs/server";
 
@@ -11,15 +11,13 @@ const publicRoutes = createRouteMatcher([
 ]);
 
 
-export default clerkMiddleware((req: any) => {
-  const { nextUrl } = req;
-
-  if (!nextUrl) {
+export default clerkMiddleware((req:any ) => {
+  if (!req.nextUrl) {
     console.error("Middleware failed: nextUrl is not defined.");
     return NextResponse.next();
   }
 
-  const pathname = nextUrl.pathname;
+  const pathname = req.nextUrl.pathname;
 
   if (publicRoutes(pathname)) {
     return NextResponse.next();

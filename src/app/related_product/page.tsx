@@ -40,9 +40,9 @@ const products = [
 
 const ProductsBox = ({ product }: { product: any }) => (
   <main>
-    <div className="group flex justify-center items-center relative cursor-pointer">
+    <Link href="/shop" className="group flex justify-center items-center relative cursor-pointer">
       <Image src={product.image} alt={product.title} width={200} height={200} />
-    </div>
+    </Link>
     <div>
       <h1 className="font-bold pt-2">{product.title}</h1>
       <div className="flex items-center space-x-2">
